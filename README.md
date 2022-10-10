@@ -22,3 +22,26 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 yarn add eslint --dev
  - 初始化eslint, 需要回答一些问题，来配置
  yarn run eslint --init
+ - 查看配置
+ - 给vscode配置，安装eslint,volar
+
+ - setting.json 设置
+
+ ```json
+ {
+    "editor.fontSize": 25,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "terminal.integrated.fontSize": 20,
+    "eslint.format.enable": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    }
+}
+ ```
